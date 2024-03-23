@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+}
+html,
+body,
+#root {
+  /* height: 100%; */
+  font-family: "Montserrat", "Roboto", Kanit, ui-sans-serif, system-ui,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  background: #000;
+  /* background-color: black; */
+}
+
+.heading {
+  font-size: 1.25rem /* 20px */;
+  line-height: 1.75rem /* 28px */;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(29 48 88 / var(--tw-text-opacity));
+}
+
+.subheading {
+  font-size: 1rem /* 20px */;
+  line-height: 1.5rem /* 28px */;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(29 48 88 / var(--tw-text-opacity));
+}
+
+.responsive {
+  padding-left: 0.5rem /* 8px */;
+  padding-right: 0.5rem /* 8px */;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 95%;
+}
+
+@media (min-width: 1024px) {
+  .responsive {
+    max-width: 56rem /* 896px */;
+  }
+}
+
+@media (min-width: 1280px) {
+  .responsive {
+    max-width: 72rem /* 1152px */;
+  }
+}
+
+@media (min-width: 1536px) {
+  .responsive {
+    max-width: 80rem /* 1280px */;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: hidden;
+}
